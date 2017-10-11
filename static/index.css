@@ -1,0 +1,39 @@
+html {
+  font-size: 16px;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 6rem;
+  line-height: 1;
+}
+
+div {
+  display: flex;
+}
+
+button {
+  background: #fff;
+  border: 1px solid #000;
+}
