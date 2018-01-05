@@ -1,39 +1,55 @@
 html {
-  font-size: 16px;
+  font-size: calc(8px + 2vmin);
   font-family: sans-serif;
+  background: white;
+}
+
+body,
+body * {
+  display: block;
+  background: none;
   box-sizing: border-box;
-}
-
-body {
   margin: 0;
-  background: #fff;
+  border: 0;
+  padding: 0;
+  outline: 0;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-  margin: 0;
-}
-
-main {
-  min-height: 100vh;
+body,
+noscript {
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-h1 {
-  font-size: 6rem;
-  line-height: 1;
-}
-
 div {
   display: flex;
+  > * + * {
+    margin-left: 0.38rem;
+  }
+}
+
+noscript {
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
 }
 
 button {
-  background: #fff;
+  padding: 0.62rem 1rem;
+  font-size: 0.62rem;
   border: 1px solid #000;
+  font-weight: bold;
+  cursor: pointer;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+h1 {
+  margin: auto;
+  font-size: 8rem;
+  cursor: pointer;
+  text-align: center;
 }
